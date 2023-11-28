@@ -1,0 +1,3 @@
+pdfkit
+markdown2
+gradio==4.0
