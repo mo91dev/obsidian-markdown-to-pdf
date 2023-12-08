@@ -1,5 +1,5 @@
 # Merge Obsidian MDs to PDF
-Compile Obsidian notes into a single PDF for use with LLMs
+Compile Obsidian notes into a single PDF w/ Gradio UI for use with LLMs
 ## Instructions
 1. populate `files` with all Obsidian markdown files you want to merge into a PDF
 2. create a virtual env in python and install all requirements form the requirements file
