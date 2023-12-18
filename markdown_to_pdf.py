@@ -29,6 +29,11 @@ def convert_to_pdf_and_display_html(markdown_files):
     # Convert combined HTML content to PDF
     pdf = pdfkit.from_string(combined_html, False)
 
+    options = {
+        'encoding': "UTF-8"
+    }
+    pdf = pdfkit.from_string(combined_html, False, options=options)
+    
     with NamedTemporaryFile(delete=False, suffix=".pdf", mode='wb') as temp_pdf:
         temp_pdf.write(pdf)
         pdf_path = temp_pdf.name
